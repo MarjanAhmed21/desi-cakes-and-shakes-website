@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Desi Cakes & Shakes</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <!-- NAVBAR -->
+<nav class="navbar">
+
+  <div class="logo">
+    <img src="images/Header-logo.png" alt="Logo">
+    <span>Desi Cakes & Shakes</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="index.html#food-range">Food Range</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="#about">About Us</a></li>
+  </ul>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <a href="menu.html#custom-contact-section" class="nav-btn">Order Now</a>
+
+</nav>
+
+  <section class="about-hero">
+    <h1>About Us</h1>
+    <p>Handcrafted bakes made with love in Oldham</p>
+  </section>
+
+  <section class="about-content">
+    <div class="about-text">
+      <h2>Our Story</h2>
+      <p>
+        We started as a small home bakery, creating fresh desserts for family and friends.
+        Over time, our passion grew into a full business serving custom cakes, desserts, and treats
+        across Oldham and beyond.
+      </p>
+
+      <p>
+        Everything we make is freshly prepared, with attention to detail and quality ingredients.
+        Whether it’s a birthday cake or a small sweet box, we put care into every order.
+      </p>
+
+      <p>
+        Desi shakes and cakes is established over 13 years. We specialise in cakes for all occasions.
+        Milshakes, waffles, desserts, crepes. Falooda, ice cream and many more. Give us try and you will be back for more!
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="images/Header-logo.png" alt="Bakery image">
+    </div>
+
+<div class="gallery-socials">
+
+  <a href="https://www.instagram.com/desicakesmcr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+     target="_blank"
+     class="social-card instagram-card">
+
+    <img src="images/instagram-icon.png" alt="Instagram Icon">
+
+    <span>
+      Follow our<br>
+      journey on<br>
+      Instagram!<br>
+    </span>
+
+  </a>
+
+  <a href="https://www.tiktok.com/@desicakesmcr?is_from_webapp=1&sender_device=pc"
+     target="_blank"
+     class="social-card tiktok-card">
+
+    <img src="images/tiktok-icon.png" alt="TikTok Icon">
+
+    <span>
+      Follow our<br>
+      journey on<br>
+      Tiktok!<br>
+    </span>
+
+  </a>
+
+</div>
+
+  </section>
+
+
+
+  <!-- GOOGLE MAP SECTION -->
+  <section class="location-section">
+    <h2>Find Us</h2>
+ 
+    <div class="gallery-grid">
+
+    <div class="gallery-item">
+    <video src="images/video4.mp4"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <div class="play-icon">
+      ▶
+    </div>
+  </div>
+
+    <div class="gallery-item">
+    <video src="images/video3.mp4"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <div class="play-icon">
+      ▶
+    </div>
+  </div>
+
+    <div class="gallery-item">
+    <video src="images/video1.mp4"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <div class="play-icon">
+      ▶
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+    
+    <div class="map-container">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.621856040563!2d-2.1232259999999523!3d53.54666579999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb9d7bb055363%3A0xcd153e2789c6cb05!2sDesi%20Cakes%20%26%20Shakes%20(chadderton%20way)!5e0!3m2!1sen!2suk!4v1779279443166!5m2!1sen!2suk"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- GALLERY LIGHTBOX -->
+
+<div class="gallery-lightbox" id="gallery-lightbox">
+
+  <span class="lightbox-close" id="lightbox-close">
+    ✕
+  </span>
+
+  <!-- PREVIOUS -->
+
+<button class="lightbox-arrow left-arrow" id="lightbox-prev">
+  ❮
+</button>
+
+<!-- NEXT -->
+
+<button class="lightbox-arrow right-arrow" id="lightbox-next">
+  ❯
+</button>
+
+  <!-- IMAGE -->
+  <img
+    src=""
+    alt=""
+    class="lightbox-image"
+    id="lightbox-image"
+  >
+
+  <!-- VIDEO -->
+  <video
+    class="lightbox-video"
+    id="lightbox-video"
+    controls
+    autoplay
+  ></video>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <!-- BRAND -->
+
+    <div class="footer-brand">
+
+      <img src="images/Header-logo.png" alt="Logo">
+
+      <h2>Desi Cakes & Shakes</h2>
+
+      <p>
+        Fresh cakes, premium shakes and handcrafted desserts made daily in Oldham.
+      </p>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-column">
+
+      <h3>Quick Links</h3>
+
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="footer-column">
+
+      <h3>Contact</h3>
+
+      <p>77 Chadderton Way</p>
+      <p>Oldham, OL9 6DH</p>
+
+      <p>0161 425 1515</p>
+      <p>07882 265 112</p>
+
+    </div>
+
+    <!-- OPENING HOURS -->
+
+    <div class="footer-column">
+
+      <h3>Opening Hours</h3>
+
+      <p>Mon - Sun</p>
+      <p>11:00am - 10:00pm</p>
+
+    </div>
+
+    <!-- SOCIALS -->
+
+    <div class="footer-column">
+
+      <h3>Follow Us</h3>
+
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Facebook</a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 Desi Cakes & Shakes. All Rights Reserved.
+    </p>
+
+    <p class="credit">
+      Website by Marjan's Web Studio
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

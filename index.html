@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Marjan's Web Studio | Modern Websites For Local Businesses</title>
+  <title>Desi Cakes & Shakes</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css"/>
@@ -13,104 +14,119 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body data-mode="takeaway">
+<body>
 
-
-    
-
-
+  
   <!-- NAVBAR -->
 
 <nav class="navbar">
 
   <div class="logo">
-    Marjan's Web Studio
+
+    <img src="images/Header-logo.png" alt="Logo">
+
+    <span>Desi Cakes & Shakes</span>
+
   </div>
 
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="#food-range">Food Range</a></li>
+  <li><a href="#gallery">Gallery</a></li>
+  <li><a href="#reviews">Reviews</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="about.html">About Us</a></li>
+</ul>
 
-  <a href="#contact" class="nav-btn">
-    Book Now
+  <!-- MOBILE MENU BUTTON -->
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <a href="menu.html#custom-contact-section" class="nav-btn">
+    Order Now
   </a>
 
-  <div class="hamburger">
-
-  <span></span>
-  <span></span>
-  <span></span>
-
-</div>
-
 </nav>
-
 
 <!-- HERO SECTION -->
 
 <section class="hero" id="home">
 
-  <div class="hero-overlay"></div>
+  <!-- LEFT -->
 
-  <div class="hero-content">
+  <div class="hero-text">
+
+    <span class="hero-tag">
+      MADE FRESH. MADE AMAZING.
+    </span>
 
     <h1>
-      Modern Websites For Local Businesses
+      Luxury Desserts <br>
+      Made to Impress
     </h1>
 
     <p>
-     I design fast, modern and responsive websites for takeaways, cafés, gyms, barbers and local brands.
+      Fresh cakes, loaded waffles, premium milkshakes and handcrafted desserts made daily.
     </p>
 
     <div class="hero-buttons">
 
-      <a href="#services" class="primary-btn">
-        Get Started
+      <a href="menu.html" class="primary-btn">
+        View Menu
       </a>
 
-      <a href="#about" class="secondary-btn">
-        Learn More
+      <a href="#" class="secondary-btn">
+        Visit Us
       </a>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div class="hero-stats">
+
+      <div class="stat-box">
+        <h3>10K+</h3>
+        <span>Desserts Served</span>
+      </div>
+
+      <div class="stat-box">
+        <h3>Fresh Daily</h3>
+        <span>Premium Quality</span>
+      </div>
+
+      <div class="stat-box">
+        <h3>Open Late</h3>
+        <span>7 Days A Week</span>
+      </div>
 
     </div>
 
   </div>
 
-</section>
+  <!-- RIGHT -->
 
+  <div class="hero-image">
 
-<!-- ABOUT SECTION -->
+    <img src="images/hero-cake-transparent.png" alt="Cake">
 
-<section class="about" id="about">
+    <!-- REVIEW CARD -->
 
-  <div class="about-container">
+    <div class="review-card">
 
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=1200&auto=format&fit=crop" alt="">
-    </div>
+      <h3>★★★★★</h3>
 
-    <div class="about-text">
-
-      <h2>About Us</h2>
+      <h2>4.9</h2>
 
       <p>
-  I'm a frontend-focused web developer and designer who creates modern, responsive websites for local businesses. My goal is to help businesses stand out online with clean design, smooth user experiences and mobile-friendly layouts.
-</p>
-
-<p>
-  From takeaways and cafés to gyms and barbers, I build websites designed to look professional, load fast and convert visitors into real customers.
-</p>
-
-      <a href="#contact" class="primary-btn">
-        Contact Us
-      </a>
+        Rated Locally
+      </p>
 
     </div>
 
@@ -118,69 +134,212 @@
 
 </section>
 
-<!-- SERVICES SECTION -->
 
-<section class="services" id="services">
+<!-- EXPLORE RANGE SECTION -->
+
+<section class="range-section" id="food-range">
 
   <div class="section-header">
 
+    <span class="section-tag">
+      EXPLORE OUR RANGE
+    </span>
+
     <h2>
-      Our Services
+      Desserts Crafted <br>
+      To Impress
     </h2>
 
     <p>
-      High quality services designed to help local businesses stand out.
+      From premium milkshakes and loaded waffles to handcrafted cakes and Asian sweets, every dessert is made fresh with flavour in mind. <br> 
+      We specialise in fresh cream cakes (for ANY occasions) and milkshakes. We ASSURE you that once you have tried, you WILL be come back again!
     </p>
 
   </div>
 
-  <div class="services-grid">
+  <div class="range-grid">
 
     <!-- CARD 1 -->
 
-    <div class="service-card">
+    <div class="range-card cakes-card">
 
-      <div class="service-image">
-        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop" alt="">
+      <img src="images/cakes-range.jpg" alt="Cakes">
+
+      <div class="range-overlay">
+        <h3>Cakes</h3>
+        <p>Freshly made with premium toppings.</p>
       </div>
-
-      <h3>Website Design</h3>
-
-<p>
-  Modern responsive websites designed for local businesses and mobile users.
-</p>
 
     </div>
 
     <!-- CARD 2 -->
 
-    <div class="service-card">
+    <div class="range-card shakes-card">
 
-      <div class="service-image">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop" alt="">
+      <img src="images/shakes-range.jpg" alt="Shakes">
+
+      <div class="range-overlay">
+        <h3>Shakes</h3>
+        <p>Thick handcrafted milkshakes.</p>
       </div>
-
-      <h3>Mobile Optimisation</h3>
-
-<p>
-  Fast mobile-friendly layouts built to look great on all screen sizes.
-</p>
 
     </div>
 
     <!-- CARD 3 -->
 
-    <div class="service-card">
+    <div class="range-card sweets-card">
 
-      <div class="service-image">
-        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop" alt="">
+      <img src="images/Asian-Sweets.png" alt="Sweets">
+
+      <div class="range-overlay">
+        <h3>Sweets</h3>
+        <p>Perfect for birthdays and events.</p>
       </div>
 
-      <h3>Brand Identity</h3>
+    </div>
 
-<p>
-  Clean visual branding and layouts that help businesses stand out online.
-</p>
+    <!-- CARD 4 -->
+
+    <div class="range-card icecream-card">
+
+      <img src="images/icecream-range.jpg" alt="Ice Cream">
+
+      <div class="range-overlay">
+        <h3>Ice Cream</h3>
+        <p>Creamy scoops with scrumptious flavours.</p>
+      </div>
+
+    </div>
+
+
+    <!-- CARD 5 -->
+
+    <div class="range-card cupcakes-card">
+
+      <img src="images/cupcakes-range.jpg" alt="Cupcakes">
+
+      <div class="range-overlay">
+        <h3>Cupcakes</h3>
+        <p>Soft, fluffy cupcakes with rich frosting.</p>
+      </div>
+
+    </div>
+
+
+     <!-- CARD 6 -->
+
+    <div class="range-card brownies-card">
+
+      <img src="images/brownies-range.jpeg" alt="Brownies">
+
+      <div class="range-overlay">
+        <h3>Brownies</h3>
+        <p>Rich, fudgy brownies baked fresh & served warm.</p>
+      </div>
+
+    </div>
+
+
+    <!-- CARD 7 -->
+
+    <div class="range-card bento-card">
+
+      <img src="images/bento-range.jpeg" alt="Bento Boxes">
+
+      <div class="range-overlay">
+        <h3>Bento Boxes</h3>
+        <p>Perfect for gifting and sharing with love.</p>
+      </div>
+
+    </div>
+
+    <!-- CARD 8 -->
+
+    <div class="range-card accessories-card">
+
+      <img src="images/accessories-range.png" alt="Accessories">
+
+      <div class="range-overlay">
+        <h3>Accessories</h3>
+        <p>Shine your celebration with charming decorations!</p>
+      </div>
+
+    </div>
+
+    
+  </div>
+
+   <div class="range-cta">
+  <a href="menu.html" class="primary-btn menu-btn">VIEW FULL MENU</a>
+</div>
+
+</section>
+
+
+<!-- BEST SELLERS SECTION -->
+
+<section class="best-sellers">
+
+  <div class="section-header">
+
+    <span class="section-tag">
+      CUSTOMER FAVOURITES
+    </span>
+
+    <h2>
+      Our Best Sellers
+    </h2>
+
+    <p>
+      The desserts everyone keeps coming back for — handcrafted favourites loved by customers every single day.
+    </p>
+
+  </div>
+
+  <div class="best-grid">
+
+    <!-- ITEM 1 -->
+
+    <div class="best-card">
+
+      <div class="best-image">
+        <img src="images/matilda-cake.jpg" alt="Matilda Cake">
+      </div>
+
+      <div class="best-content">
+        <h3>Matilda Cake</h3>
+        <p>Rich chocolate layers with luxury fudge filling.</p>
+      </div>
+
+    </div>
+
+    <!-- ITEM 2 -->
+
+    <div class="best-card">
+
+      <div class="best-image">
+        <img src="images/ferrero-shake.jpg" alt="Ferrero Shake">
+      </div>
+
+      <div class="best-content">
+        <h3>Ferrero Shake</h3>
+        <p>Loaded with Ferrero Rocher and Belgian chocolate.</p>
+      </div>
+
+    </div>
+
+    <!-- ITEM 3 -->
+
+    <div class="best-card">
+
+      <div class="best-image">
+        <img src="images/kunafa-cheesecake.jpg" alt="Kunafa Cheesecake">
+      </div>
+
+      <div class="best-content">
+        <h3>Kunafa Cheesecake</h3>
+        <p>Crispy kunafa layered with creamy cheesecake.</p>
+      </div>
 
     </div>
 
@@ -188,18 +347,24 @@
 
 </section>
 
+
+
 <!-- GALLERY SECTION -->
 
-<section class="gallery" id="gallery">
+<section class="gallery-section" id="gallery">
 
   <div class="section-header">
 
+    <span class="section-tag">
+      OUR CREATIONS
+    </span>
+
     <h2>
-      Recent Projects
+      Dessert Gallery
     </h2>
 
     <p>
-      A selection of modern website concepts and business-focused layouts.
+      A glimpse into our freshest creations — cakes, shakes, and desserts made daily.
     </p>
 
   </div>
@@ -207,113 +372,282 @@
   <div class="gallery-grid">
 
     <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop" alt="">
+      <img src="images/gallery1.jpg" alt="">
     </div>
 
     <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="">
+      <img src="images/gallery2.jpg" alt="">
     </div>
 
     <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop" alt="">
+      <img src="images/gallery3.jpg" alt="">
     </div>
 
     <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop" alt="">
+    <video src="images/video4.mp4"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <div class="play-icon">
+      ▶
     </div>
+  </div>
+
+    <div class="gallery-item">
+      <img src="images/gallery4.jpg" alt="">
+    </div>
+
+    <div class="gallery-item">
+    <video src="images/video3.mp4"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <div class="play-icon">
+      ▶
+    </div>
+  </div>
+
+    <div class="gallery-item">
+    <video src="images/video2.mp4"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <div class="play-icon">
+      ▶
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <video src="images/video1.mp4"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+    <div class="play-icon">
+      ▶
+    </div>
+  </div>
 
   </div>
 
+  <div class="gallery-socials">
+
+  <a href="https://www.instagram.com/desicakesmcr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+     target="_blank"
+     class="social-card instagram-card">
+
+    <img src="images/instagram-icon.png" alt="Instagram Icon">
+
+    <span>
+      Check out more<br>
+      on our<br>
+      Instagram<br> 
+      page!
+    </span>
+
+  </a>
+
+  <a href="https://www.tiktok.com/@desicakesmcr?is_from_webapp=1&sender_device=pc"
+     target="_blank"
+     class="social-card tiktok-card">
+
+    <img src="images/tiktok-icon.png" alt="TikTok Icon">
+
+    <span>
+      Check out more<br>
+      on our<br>
+      TikTok<br> 
+      page!
+    </span>
+
+  </a>
+
+</div>
+
 </section>
+
+<!-- GALLERY LIGHTBOX -->
+
+<div class="gallery-lightbox" id="gallery-lightbox">
+
+  <span class="lightbox-close" id="lightbox-close">
+    ✕
+  </span>
+
+  <!-- PREVIOUS -->
+
+<button class="lightbox-arrow left-arrow" id="lightbox-prev">
+  ❮
+</button>
+
+<!-- NEXT -->
+
+<button class="lightbox-arrow right-arrow" id="lightbox-next">
+  ❯
+</button>
+
+  <!-- IMAGE -->
+  <img
+    src=""
+    alt=""
+    class="lightbox-image"
+    id="lightbox-image"
+  >
+
+  <!-- VIDEO -->
+  <video
+    class="lightbox-video"
+    id="lightbox-video"
+    controls
+    autoplay
+  ></video>
+
+</div>
 
 
 <!-- TESTIMONIALS SECTION -->
 
-<section class="testimonials" id="testimonials">
+<section class="testimonials-section" id="reviews">
 
   <div class="section-header">
 
+    <span class="section-tag">
+      WHAT CUSTOMERS SAY
+    </span>
+
     <h2>
-      What Our Customers Say
+      Loved By Everyone
     </h2>
 
     <p>
-      Trusted by customers who value quality, professionalism and great service.
+      Real feedback from our customers who keep coming back for more.
     </p>
 
   </div>
 
   <div class="testimonials-grid">
+    
+  <div class="testimonial-card">
 
-    <!-- TESTIMONIAL 1 -->
+    <div class="testimonial-content">
+      <h4>– Kolsuma Bibi Rahman</h4>
 
-    <div class="testimonial-card">
+      <p class="testimonial-text collapsed">
+        “This is my go to dessert shop now when I’m in Oldham. The vanilla sponge is too good. I ask for them to surprise me with the designs and they never fail to put a smile on my face. Highly recommend Thank you so much!”
+      </p>
+    </div>
+    
+      <button class="toggle-review">Read more</button>
 
-      <h3>★★★★★</h3>
+  </div>
 
-      <p>
-        “Great communication and a very smooth experience from start to finish.”
+  <div class="testimonial-card">
+
+    <div class="testimonial-content">
+      <h4>– Marjan Ahmed Mashud</h4>
+
+      <p class="testimonial-text collapsed">
+        "My graduation was spectacular! And half of its reason was the gigantic magnificent cake baked, carved and produced by the legends themselves, Desi Cakes & Shakes! They all tasted SO DAMN BRILLIANT man, i can't even find the proper words to describe it man wth????"
       </p>
 
-      <span>- John Smith</span>
-
     </div>
+    
+      <button class="toggle-review">Read more</button>
 
-    <!-- TESTIMONIAL 2 -->
+  </div>
 
-    <div class="testimonial-card">
+<div class="testimonial-card">
+    <div class="testimonial-content">
+      <h4>– F</h4>
 
-      <h3>★★★★★</h3>
-
-      <p>
-        “Great communication and a very smooth experience from start to finish.”
+      <p class="testimonial-text collapsed">
+        "Thank you for the cutest bento cake. My sister absolutely loved it and the glitter effect was stunning on the cake. The service has been great as they accommodated me when I needed to pick the cake earlier than planned. I also bought a Matilda chocolate cake and it tasted absolutely delicious. Thank you!"
       </p>
+  </div>
+    
+      <button class="toggle-review">Read more</button>
 
-      <span>- Sarah Williams</span>
+  </div>
 
-    </div>
+  <div class="testimonial-card">
+    <div class="testimonial-content">
+      <h4>– Lou Callan</h4>
 
-    <!-- TESTIMONIAL 3 -->
-
-    <div class="testimonial-card">
-
-      <h3>★★★★★</h3>
-
-      <p>
-        “Helped modernise our online presence and improve mobile usability.”
+      <p class="testimonial-text collapsed">
+        "Cake was absolutely beautiful, and made and decorated with the freshest of cream. My partner's mum and all the family were absolutely blown away with it, as the taste was delicious…the lightest fluffiest sponge. When we collected, other people were collecting cakes too so this is obviously a popular place. We cannot thank this place enough for the service they provided, and exceptional quality of cake. Thanks for saving the day! Outstanding 🍰 🍰 🧁 🎂"
       </p>
-
-      <span>- Michael Khan</span>
-
     </div>
+    
+      <button class="toggle-review">Read more</button>
+
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-content">
+      <h4>– Amina Ali</h4>
+
+      <p class="testimonial-text collapsed">
+        "I couldn’t be happier with the cake I ordered! From the moment I opened the box, I was impressed – it looked stunning and exactly as I’d hoped for. The sponge was soft, light, and moist, and the flavour was perfectly balanced – sweet but not overpowering. The decoration was so beautifully done and really made it feel special for the occasion. Everyone at the celebration commented on how fresh and delicious it was, and several people even asked where I got it from. It truly exceeded my expectations and helped make the day memorable. I’ll definitely be coming back for future occasions – highly recommend."
+       </p>
+    </div>
+    
+      <button class="toggle-review">Read more</button>
+
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-content">
+      <h4>– Ayman Hussain</h4>
+
+      <p class="testimonial-text collapsed">
+        "I had such a great experience at Desi Cakes and Shakes! The prices are really good for the quality you get, which makes it even better when you want to treat yourself without spending too much. Anything is available on request which makes everything heavily convenient, I can rely on Desi to help me whenever possible because they tend to deliver perfectly and ace orders all day every day! Even though the store was very busy when I visited, everything was handled really well and the order times were managed perfectly. You could see the team working hard to keep everything running smoothly. What stood out the most was the amazing customer service, especially from Kahshaan. He was friendly, professional, and made sure customers were looked after even during the rush. It’s rare to see someone stay that attentive and positive when the place is packed, and it definitely made the experience even better. Great prices, great atmosphere, and excellent staff. I’ll definitely be coming back again!"
+     </p>
+    </div>
+    
+      <button class="toggle-review">Read more</button>
+
+  </div>
+
+<div class="testimonial-card">
+  <div class="testimonial-content">
+    <h4>– Zoya Mehreen</h4>
+
+      <p class="testimonial-text collapsed">
+        "Ordered a fresh cream cake yesterday and it was delicious. I have never had such a nice cake before . The freshness of the sponge was very well balanced with the fresh cream and the fruits added an extra freshness. The sponge was so soft and not at all dry. The cake wasn't soaked in any sugar syrup but yet it had the moisture in it. It was yum 😋 i would definitely visit the place again."
+      </p>
+  </div>
+    
+      <button class="toggle-review">Read more</button>
+
+  </div>
+
 
   </div>
 
 </section>
 
 
-<!-- CTA SECTION -->
+<section class="location-section">
+  <h2>Visit Our Store</h2>
 
-<section class="cta-section">
-
-  <div class="cta-content">
-
-    <h2>
-      Ready To Grow Your Business?
-    </h2>
-
-    <p>
-      <p>
-  Need a modern website for your business? Let’s create something professional, responsive and built to impress customers.
-</p>
-    </p>
-
-    <a href="#" class="primary-btn">
-      Contact Us Today
-    </a>
-
+  <div class="map-container">
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.621856040563!2d-2.1232259999999523!3d53.54666579999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb9d7bb055363%3A0xcd153e2789c6cb05!2sDesi%20Cakes%20%26%20Shakes%20(chadderton%20way)!5e0!3m2!1sen!2suk!4v1779279443166!5m2!1sen!2suk"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
   </div>
-
 </section>
 
 
@@ -323,12 +657,16 @@
 
   <div class="section-header">
 
+    <span class="section-tag">
+      GET IN TOUCH
+    </span>
+
     <h2>
-      Contact Us
+      Visit Or Contact Us
     </h2>
 
     <p>
-      Get in touch today and let’s build something modern together.
+      Whether you're ordering a celebration cake, craving desserts late at night, or planning an event — we’d love to hear from you.
     </p>
 
   </div>
@@ -340,39 +678,74 @@
     <div class="contact-info">
 
       <div class="contact-item">
+
         <h3>Phone</h3>
-        <p>+44 7498 128499</p>
+
+        <p>0161 425 1515</p>
+        <p>07882 265 112</p>
+
       </div>
 
       <div class="contact-item">
-        <h3>Email</h3>
-        <p>marjan14362@gmail.com</p>
-      </div>
 
-      <div class="contact-item">
         <h3>Address</h3>
-        <p>Oldham, Greater Manchester</p>
+
+        <p>
+          77 Chadderton Way <br>
+          Oldham, OL9 6DH
+        </p>
+
       </div>
 
       <div class="contact-item">
+
         <h3>Opening Hours</h3>
-        <p>Mon - Sun | 9AM - 10PM</p>
+
+        <p>Monday - Sunday</p>
+        <p>11:00am - 10:00pm</p>
+
+      </div>
+
+      <div class="contact-item">
+
+        <h3>Follow Us</h3>
+
+        <p>Instagram • TikTok • Facebook</p>
+
       </div>
 
     </div>
+
+
 
     <!-- CONTACT FORM -->
 
     <form class="contact-form">
 
-      <input type="text" placeholder="Your Name">
+      <input
+        type="text"
+        placeholder="Your Name"
+        required
+      >
 
-      <input type="email" placeholder="Your Email">
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        required
+      >
 
-      <textarea placeholder="Your Message"></textarea>
+      <input
+        type="email"
+        placeholder="Email Address"
+      >
+
+      <textarea
+        placeholder="Tell us about your order, event, or enquiry..."
+        required
+      ></textarea>
 
       <button type="submit" class="primary-btn">
-        Send Message
+        Send Enquiry
       </button>
 
     </form>
@@ -386,27 +759,69 @@
 
 <footer class="footer">
 
-  <div class="footer-content">
+  <div class="footer-grid">
 
-    <h2>Marjan's Web Studio</h2>
+    <!-- BRAND -->
 
-    <p>
-      Modern websites built for ambitious local businesses.
-    </p>
+    <div class="footer-brand">
 
-    <div class="footer-links">
+      <img src="images/Header-logo.png" alt="Logo">
 
-      <a href="mailto:marjan14362@gmail.com">
-    Email
-  </a>
+      <h2>Desi Cakes & Shakes</h2>
 
-  <a href="https://github.com/MarjanAhmed21" target="_blank">
-    GitHub
-  </a>
+      <p>
+        Fresh cakes, premium shakes and handcrafted desserts made daily in Oldham.
+      </p>
 
-  <a href="https://linkedin.com/in/marjan-ahmed-mashud" target="_blank">
-    LinkedIn
-  </a>
+    </div>
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-column">
+
+      <h3>Quick Links</h3>
+
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="footer-column">
+
+      <h3>Contact</h3>
+
+      <p>77 Chadderton Way</p>
+      <p>Oldham, OL9 6DH</p>
+
+      <p>0161 425 1515</p>
+      <p>07882 265 112</p>
+
+    </div>
+
+    <!-- OPENING HOURS -->
+
+    <div class="footer-column">
+
+      <h3>Opening Hours</h3>
+
+      <p>Mon - Sun</p>
+      <p>11:00am - 10:00pm</p>
+
+    </div>
+
+    <!-- SOCIALS -->
+
+    <div class="footer-column">
+
+      <h3>Follow Us</h3>
+
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Facebook</a>
 
     </div>
 
@@ -415,32 +830,20 @@
   <div class="footer-bottom">
 
     <p>
-      © 2026 Marjan's Web Studio. All Rights Reserved.
+      © 2026 Desi Cakes & Shakes. All Rights Reserved.
+    </p>
+
+    <p class="credit">
+      Website by Marjan's Web Studio
     </p>
 
   </div>
+  
 
 </footer>
 
-  <script src="script.js"></script>
-
-  <!-- MOBILE STICKY ACTION BAR -->
-
-<div class="mobile-bar">
-
-  <a href="#" class="mobile-btn call-btn">
-    📞 Call
-  </a>
-
-  <a href="#contact" class="mobile-btn main-btn">
-    Action
-  </a>
-
-  <a href="#services" class="mobile-btn extra-btn">
-    Menu
-  </a>
-
-</div>
+<script src="script.js"></script>
 
 </body>
+
 </html>
