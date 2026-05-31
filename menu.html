@@ -50,12 +50,18 @@
 <!-- TOPBAR -->
 <section class="menu-topbar">
 
-  <input type="text" placeholder="Search desserts..." class="menu-search">
+  <div class="search-wrapper">
+  <input type="text" placeholder="Search desserts..." class="menu-search" id="menu-search">
+  <div class="search-dropdown" id="search-dropdown"></div>
+</div>
 
   <div class="menu-categories">
     <a href="#cakes">Cakes</a>
     <a href="#shakes">Shakes</a>
-    <a href="#waffles">Waffles</a>
+    <a href="#specialdrinks">Special Drinks</a>
+    <a href="#colddrinks">Cold Drinks</a>
+    <a href="#hotdrinks">Hot Drinks</a>
+    <a href="#waffles">Waffles & Crepes</a>
     <a href="#icecream">Ice Cream</a>
     <a href="#cupcakes">Cupcakes</a>
     <a href="#brownies">Brownies</a>
@@ -146,6 +152,103 @@
         <span>£5.50</span>
     </div>
     </div>
+  </div>
+</section>
+
+
+<!-- =========================
+            SPECIAL DRINKS
+ ========================= -->
+
+<section id="specialdrinks" class="menu-section">
+  <div class="menu-section-header">
+    <h2>Special Drinks</h2>
+    <p>Traditional and signature drinks</p>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="images/falooda.jpg" />
+      <div class="menu-content">
+        <h3>Falooda</h3>
+        <p>Milk, jelly, basil seeds & ice cream layered dessert drink</p>
+        <span>£4.95</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+            COLD DRINKS
+ ========================= -->
+
+ <section id="colddrinks" class="menu-section">
+  <div class="menu-section-header">
+    <h2>Cold Drinks</h2>
+    <p>Refreshing bottled & canned drinks</p>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="images/coke.jpg" />
+      <div class="menu-content">
+        <h3>Coca-Cola</h3>
+        <span>£1.50</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/fanta.jpg" />
+      <div class="menu-content">
+        <h3>Fanta</h3>
+        <span>£1.50</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/rubicon.jpg" />
+      <div class="menu-content">
+        <h3>Rubicon</h3>
+        <span>£1.50</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+            HOT DRINKS
+ ========================= -->
+
+<section id="hotdrinks" class="menu-section">
+  <div class="menu-section-header">
+    <h2>Hot Drinks</h2>
+    <p>Warm drinks made fresh</p>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="images/tea.jpg" />
+      <div class="menu-content">
+        <h3>Tea</h3>
+        <span>£1.50</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/coffee.jpg" />
+      <div class="menu-content">
+        <h3>Coffee</h3>
+        <span>£2.00</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -472,7 +575,19 @@
 
     <!-- FORM -->
 
-    <form class="contact-form">
+    <!-- CONTACT FORM -->
+
+    <form name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="contact-form">
+
+    <!-- required hidden input -->
+    <input type="hidden" name="form-name" value="contact">
+
+    <!-- spam protection (invisible) -->
+    <input type="hidden" name="bot-field">
 
       <input
         type="text"

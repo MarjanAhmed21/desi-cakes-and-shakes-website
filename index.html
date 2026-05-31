@@ -720,7 +720,18 @@
 
     <!-- CONTACT FORM -->
 
-    <form class="contact-form">
+    <form name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="contact-form">
+
+    <!-- required hidden input -->
+    <input type="hidden" name="form-name" value="contact">
+
+    <!-- spam protection (invisible) -->
+    <input type="hidden" name="bot-field">
+
 
       <input
         type="text"

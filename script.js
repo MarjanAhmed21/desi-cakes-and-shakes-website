@@ -244,3 +244,77 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft") prevItem();
   if (e.key === "Escape") closeLightbox();
 });
+
+
+// =========================
+// AUTOCOMPLETE SEARCH DROPDOWN
+// =========================
+
+const searchInput = document.getElementById("menu-search");
+const dropdown = document.getElementById("search-dropdown");
+const items = document.querySelectorAll(".menu-item");
+
+function getAllProducts() {
+  return Array.from(items).map((item) => {
+    const titleEl = item.querySelector("h3");
+    const descEl = item.querySelector("p");
+
+    return {
+      element: item,
+      title: titleEl ? titleEl.textContent : "",
+      description: descEl ? descEl.textContent : ""
+    };
+  });
+}
+
+const products = getAllProducts();
+
+searchInput.addEventListener("input", function () {
+  const query = this.value.toLowerCase().trim();
+
+  dropdown.innerHTML = "";
+
+  if (query.length === 0) {
+    dropdown.style.display = "none";
+    return;
+  }
+
+  const matches = products.filter((p) =>
+    p.title.toLowerCase().startsWith(query)
+  );
+
+  if (matches.length === 0) {
+    dropdown.style.display = "none";
+    return;
+  }
+
+  matches.forEach((match) => {
+    const div = document.createElement("div");
+    div.classList.add("search-item");
+
+    div.innerHTML = `
+      <span>${match.title}</span>
+      <small>${match.description}</small>
+    `;
+
+    div.addEventListener("click", () => {
+      match.element.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+      match.element.style.outline = "3px solid #e4087f";
+
+      setTimeout(() => {
+        match.element.style.outline = "none";
+      }, 1500);
+
+      dropdown.style.display = "none";
+      searchInput.value = "";
+    });
+
+    dropdown.appendChild(div);
+  });
+
+  dropdown.style.display = "flex";
+});
