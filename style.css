@@ -1654,7 +1654,7 @@ html {
   padding: 30px 8%;
   background: white;
 
-  position: relative;
+  position: sticky;
   top: var(--nav-height);
   z-index: 999;
 
