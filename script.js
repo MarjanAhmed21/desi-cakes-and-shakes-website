@@ -318,3 +318,75 @@ searchInput.addEventListener("input", function () {
 
   dropdown.style.display = "flex";
 });
+
+
+
+fetch("menu.json")
+  .then(res => res.json())
+  .then(data => {
+    renderSection("mains", data.mains);
+    renderSection("cakes", data.cakes);
+    renderSection("shakes", data.shakes);
+    renderSection("drinks", data.drinks);
+    renderSection("desserts", data.desserts);
+    renderSection("sweets", data.sweets);
+    renderSection("matchas", data.matchas);
+  });
+
+function renderSection(sectionId, items) {
+  const grid = document.getElementById(`${sectionId}-grid`);
+
+  items.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "menu-item";
+
+    card.innerHTML = `
+      <img src="${item.img}" alt="${item.name}">
+      <div class="menu-content">
+        <h3>${item.name}</h3>
+        <p>${item.desc}</p>
+        <span class="price">${item.price}</span>
+      </div>
+    `;
+
+    // CLICK FOR MODAL
+    card.addEventListener("click", () => openModal(item));
+
+    grid.appendChild(card);
+  });
+}
+
+
+// =========================
+// MODAL POP UP
+// =========================
+
+const modal = document.getElementById("menu-modal");
+const modalImg = document.getElementById("modal-img");
+const modalTitle = document.getElementById("modal-title");
+const modalDesc = document.getElementById("modal-desc");
+const modalPrice = document.getElementById("modal-price");
+const whatsappBtn = document.getElementById("whatsapp-btn");
+const closeBtn = document.getElementById("modal-close");
+
+function openModal(item) {
+  modal.classList.add("active");
+
+  modalImg.src = item.img;
+  modalTitle.textContent = item.name;
+  modalDesc.textContent = item.desc;
+  modalPrice.textContent = item.price;
+
+  whatsappBtn.href =
+    `https://wa.me/441234567890?text=I want to order: ${item.name} (${item.price})`;
+}
+
+closeBtn.onclick = () => {
+  modal.classList.remove("active");
+};
+
+window.onclick = (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
+};

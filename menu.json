@@ -1,0 +1,357 @@
+{
+  "mains": [
+  {
+    "name": "Kunafa Cup",
+    "price": "£8.00",
+    "desc": "Strawberry filled cup smothered with kunafa pistachio topping sauce as well as Belgium chocolate sauce and white chocolate sauce.",
+    "img": "images/kufana.jpg",
+    "alt": "Kunafa Cup",
+    "class": "kufana-card"
+  },
+  {
+    "name": "Waffles",
+    "price": "£6.50",
+    "desc": "Classic waffle with a crisp outside and a soft centre.",
+    "img": "images/waffles.jpg",
+    "alt": "Waffles",
+    "class": "waffles-card"
+  },
+  {
+    "name": "Brownie Pots",
+    "price": "£5.00",
+    "desc": "Individual pots filled with chocolate brownie.",
+    "img": "images/brownies-pots.jpg",
+    "alt": "Brownie Pots",
+    "class": "brownies-card"
+  },
+  {
+    "name": "Cupcakes",
+    "price": "£5.00",
+    "desc": "Soft, fluffy cupcakes with rich frosting.",
+    "img": "images/range.jpg",
+    "alt": "Cupcakes",
+    "class": "cupcakes-card"
+  }
+],
+"cakes": [
+  {
+    "name": "Matilda Cake",
+    "price": "£6.50",
+    "desc": "Chocolate fudge cake smothered with chocolate ganache.",
+    "img": "images/matilda-cake.jpg",
+    "alt": "Matilda Cake",
+    "class": "matildacake-card"
+  },
+  {
+    "name": "Celebration Cake (9')",
+    "price": "£30.00",
+    "desc": "Flavour vanilla with strawberry jam. Tell us what the occasion is and let's customise this cake for the best Celebration!",
+    "img": "images/celebrate-cake.jpg",
+    "alt": "Celebration Cake",
+    "class": "celebratecake-card"
+  }
+],
+"shakes": [
+  {
+    "name": "Oreo Milkshake",
+    "price": "£6.00",
+    "desc": "Creamy milkshake blended with crushed Oreo biscuit pieces throughout.",
+    "img": "images/oreo-milkshake.jpg",
+    "alt": "Oreo Milkshake",
+    "class": "oreoshake-card"
+  },
+  {
+    "name": "Biscoff Milkshake",
+    "price": "£6.00",
+    "desc": "Caramelised milkshake blended with crushed Biscoff biscuit pieces throughout.",
+    "img": "images/biscoff-milkshake.jpg",
+    "alt": "Biscoff Milkshake",
+    "class": "biscoffshake-card"
+  },
+  {
+    "name": "Ferrero Rocher Milkshake",
+    "price": "£6.00",
+    "desc": "Milkshake blended with Ferrero Rocher chocolates for hazelnut chocolate flavour.",
+    "img": "images/ferrero-rocher-milkshake.jpg",
+    "alt": "Ferrero Rocher Milkshake",
+    "class": "ferrero-card"
+  },
+  {
+    "name": "Kinder Bueno Chocolate Milkshake",
+    "price": "£6.00",
+    "desc": "Creamy chocolate milkshake blended with Kinder Bueno for a rich, indulgent treat.",
+    "img": "images/kinder-bueno-milkshake.jpg",
+    "alt": "Kinder Bueno Milkshake",
+    "class": "kinderbueno-card"
+  },
+  {
+    "name": "Vanilla Milkshake",
+    "price": "£6.00",
+    "desc": "Classic vanilla milkshake, smooth and creamy.",
+    "img": "images/vanilla-milkshake.jpg",
+    "alt": "Vanilla Milkshake",
+    "class": "vanilla-card"
+  },
+  {
+    "name": "Chocolate Brownie Milkshake",
+    "price": "£6.00",
+    "desc": "Milkshake with rich chocolate brownie flavour, indulgent and chocolatey.",
+    "img": "images/chocolate-brownie-milkshake.jpg",
+    "alt": "Chocolate Brownie Milkshake",
+    "class": "chocolatebrownie-card"
+  },
+  {
+    "name": "Cookies and Cream Milkshake",
+    "price": "£6.00",
+    "desc": "Creamy milkshake blended with ice cream and milk, with crushed chocolate cookies throughout.",
+    "img": "images/cookies-and-cream-milkshake.jpg",
+    "alt": "Cookies and Cream Milkshake",
+    "class": "cookiescream-card"
+  },
+  {
+    "name": "Strawberry Cheesecake Milkshake",
+    "price": "£6.00",
+    "desc": "Thick, creamy milkshake with strawberry cheesecake flavour.",
+    "img": "images/strawberry-cheesecake-milkshake.jpg",
+    "alt": "Strawberry Cheesecake Milkshake",
+    "class": "strawberrycheesecake-card"
+  },
+  {
+    "name": "Mint Chocolate Chip Milkshake",
+    "price": "£6.00",
+    "desc": "Mint-flavoured milkshake blended with chocolate chip pieces throughout.",
+    "img": "images/mint-chocolate-chip-milkshake.jpg",
+    "alt": "Mint Chocolate Chip Milkshake",
+    "class": "mintchoc-chip-card"
+  },
+  {
+    "name": "Bubblegum Milkshake",
+    "price": "£6.00",
+    "desc": "Bubblegum flavour milkshake made with milk and ice cream.",
+    "img": "images/bubblegum-milkshake.jpg",
+    "alt": "Bubblegum Milkshake",
+    "class": "bubblegum-card"
+  },
+  {
+    "name": "Millions Milkshake",
+    "price": "£6.00",
+    "desc": "Milkshake blended with Millions sweets for that classic chew and flavour.",
+    "img": "images/millions-milkshake.jpg",
+    "alt": "Millions Milkshake",
+    "class": "millions-card"
+  }
+],
+  "drinks": [
+    {
+      "name": "Coca Cola",
+      "price": "£1.00",
+      "desc": "Chilled soft drink",
+      "img": "images/coca-cola.jpg",
+      "alt": "Coca Cola",
+      "class": "coke-card"
+    },
+    {
+      "name": "Redbull",
+      "price": "£2.30",
+      "desc": "It gives you wings inih",
+      "img": "images/redbull.jpg",
+      "alt": "Redbull",
+      "class": "redbull-card"
+    },
+    {
+      "name": "(1.5L) Coca Cola Bottle",
+      "price": "£3.00",
+      "desc": "Large bottle of Coca Cola for sharing or takeaway",
+      "img": "images/coca-cola-1.5l.jpg",
+      "alt": "Coca Cola 1.5L Bottle",
+      "class": "cocacola-bottle-card"
+    },
+    {
+      "name": "Pepsi",
+      "price": "£1.00",
+      "desc": "Chilled soft drink",
+      "img": "images/pepsi.jpg",
+      "alt": "Pepsi",
+      "class": "pepsi-card"
+    },
+    {
+      "name": "Fanta",
+      "price": "£1.00",
+      "desc": "Chilled orange soft drink",
+      "img": "images/fanta.jpg",
+      "alt": "Fanta",
+      "class": "fanta-card"
+    },
+    {
+      "name": "Diet Coke",
+      "price": "£1.00",
+      "desc": "Zero sugar chilled soft drink",
+      "img": "images/diet-coke.jpg",
+      "alt": "Diet Coke",
+      "class": "dietcoke-card"
+    },
+    {
+      "name": "Rio",
+      "price": "£1.00",
+      "desc": "Fruity tropical soft drink",
+      "img": "images/rio.jpg",
+      "alt": "Rio",
+      "class": "rio-card"
+    },
+    {
+      "name": "Guava",
+      "price": "£1.00",
+      "desc": "Fruity guava-flavoured drink",
+      "img": "images/guava.jpg",
+      "alt": "Guava Drink",
+      "class": "guava-card"
+    },
+    {
+      "name": "Irn Bru",
+      "price": "£1.00",
+      "desc": "Classic Scottish fizzy drink",
+      "img": "images/irn-bru.jpg",
+      "alt": "Irn Bru",
+      "class": "irnbru-card"
+    },
+    {
+      "name": "Vimto",
+      "price": "£1.00",
+      "desc": "Fruity berry-flavoured soft drink",
+      "img": "images/vimto.jpg",
+      "alt": "Vimto",
+      "class": "vimto-card"
+    },
+    {
+      "name": "7 Up",
+      "price": "£1.00",
+      "desc": "Lemon-lime sparkling soft drink",
+      "img": "images/7up.jpg",
+      "alt": "7 Up",
+      "class": "sevenup-card"
+    },
+    {
+      "name": "Mirinda Strawberry",
+      "price": "£1.00",
+      "desc": "Strawberry flavoured fizzy drink",
+      "img": "images/mirinda-strawberry.jpg",
+      "alt": "Mirinda Strawberry",
+      "class": "mirinda-card"
+    }
+  ],
+
+  "desserts": [
+    {
+      "name": "Matilda Mini Eggs Crunch Cake",
+      "price": "£6.50",
+      "desc": "Cake topped with mini eggs and crunchy pieces.",
+      "img": "images/minieggcrunchcake.jpg",
+      "alt": "Matilda Mini Eggs Crunch Cake",
+      "class": "minieggscrunchcake-card"
+    },{
+      "name": "Milk Cake",
+      "price": "£7.00",
+      "desc": "Classic milk-based cake with a dense, creamy texture.",
+      "img": "images/milkcake.jpg",
+      "alt": "Milk Cake",
+      "class": "milkcake-card"
+    },{
+      "name": "Matilda Mini Eggs Crunch Pot",
+      "price": "£5.50",
+      "desc": "Dessert pot topped with crushed mini eggs for a crunchy bite.",
+      "img": "images/minieggcrunchpot.jpg",
+      "alt": "Matilda Mini Eggs Crunch Pot",
+      "class": "minieggscrunchpot-card"
+    },{
+      "name": "Malteaser Crunch Cake",
+      "price": "£6.50",
+      "desc": "Cake with crushed Maltesers for a malty crunch.",
+      "img": "images/malteasercrunchcake.jpg",
+      "alt": "Malteaser Crunch Cake",
+      "class": "malteasercrunchcake-card"
+    },{
+      "name": "Jammy Dodger Crunch Cake",
+      "price": "£6.50",
+      "desc": "Cake layered with jam and biscuit crumb, topped with Jammie Dodger pieces.",
+      "img": "images/jammydodgercrunchcake.jpg",
+      "alt": "Jammy Dodger Crunch Cake",
+      "class": "jammydodgercrunchcake-card"
+    },{
+      "name": "White Kinder Bueno Crunch Cake",
+      "price": "£6.50",
+      "desc": "Cake topped with White Kinder Bueno and crunchy pieces.",
+      "img": "images/whitekindercrunchcake.jpg",
+      "alt": "White Kinder Bueno Crunch Cake",
+      "class": "whitekindercrunchcake-card"
+    }
+  ],
+
+  "sweets": [
+    {
+      "name": "Asian Sweet Selection Box (half kg)",
+      "price": "£6.50",
+      "desc": "Half kg box of assorted Asian sweets with a mix of flavours and textures.",
+      "img": "images/asiansweethalfkg.jpg",
+      "alt": "Asian Sweet Selection Box (half kg)",
+      "class": "asiansweethalfkg-card"
+    },
+    {
+      "name": "Asian Sweet Selection Box (1 kg)",
+      "price": "£12.00",
+      "desc": "Mixed assortment of Asian sweets, 1 kg box with a variety of pieces and flavours.",
+      "img": "images/asiansweet1kg.jpg",
+      "alt": "Asian Sweet Selection Box (1 kg)",
+      "class": "asiansweet1kg-card"
+    },
+    {
+      "name": "Gulab Jamun Container (6 pieces)",
+      "price": "£6.00",
+      "desc": "6 soft gulab jamun soaked in sugar syrup, packed in a handy container.",
+      "img": "images/gulabjamin6.jpg",
+      "alt": "Gulab Jamun Container (6 pieces)",
+      "class": "gulabjamin6-card"
+    },
+    {
+      "name": "Rasmalai Container (6 pieces)",
+      "price": "£6.00",
+      "desc": "6 soft cheese dumplings in sweetened milk, packed in a handy container.",
+      "img": "images/rasmalai6.jpg",
+      "alt": "Rasmalai Container (6 pieces)",
+      "class": "rasmalai6-card"
+    }
+  ],
+  "matchas": [
+    {
+      "name": "White Chocolate Matcha",
+      "price": "£6.50",
+      "desc": "Iced matcha green tea with white chocolate.",
+      "img": "images/whitechocmatcha.jpg",
+      "alt": "White Chocolate Matcha",
+      "class": "whitechocmatcha-card"
+    },
+    {
+      "name": "White Chocolate & Strawberry Matcha",
+      "price": "£6.50",
+      "desc": "Iced matcha with white chocolate and strawberry flavous.",
+      "img": "images/whitechocstrawberrymatcha.jpg",
+      "alt": "White Chocolate & Strawberry Matcha",
+      "class": "whitechocstrawberrymatcha-card"
+    },
+    {
+      "name": "French Vanilla Matcha",
+      "price": "£6.50",
+      "desc": "Iced matcha with French vanilla flavour.",
+      "img": "images/frenchvanillamatcha.jpg",
+      "alt": "French Vanilla Matcha",
+      "class": "frenchvanillamatcha-card"
+    },
+    {
+      "name": "Blueberry Matcha",
+      "price": "£6.50",
+      "desc": "Iced matcha green tea with blueberry flavour.",
+      "img": "images/blueberrymatcha.jpg",
+      "alt": "Blueberry Matcha",
+      "class": "blueberrymatcha-card"
+    }
+  ]
+}
