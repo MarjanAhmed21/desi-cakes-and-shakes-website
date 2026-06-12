@@ -532,7 +532,7 @@ document.getElementById("checkout-btn").onclick = () => {
     message += `${item.name} x${item.quantity} - ${item.price}%0A`;
   });
 
-  const phone = "441234567890";
+  const phone = "447882265112"; // <-- that's desi cake's number (no + sign)
 
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 };
