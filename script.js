@@ -321,6 +321,7 @@ searchInput.addEventListener("input", function () {
 
 
 
+
 fetch("menu.json")
   .then(res => res.json())
   .then(data => {
@@ -368,6 +369,12 @@ const modalDesc = document.getElementById("modal-desc");
 const modalPrice = document.getElementById("modal-price");
 const whatsappBtn = document.getElementById("whatsapp-btn");
 const closeBtn = document.getElementById("modal-close");
+const qtyInput = document.getElementById("quantity");
+const plusBtn = document.getElementById("plus-btn");
+const minusBtn = document.getElementById("minus-btn");
+const addCartBtn = document.getElementById("add-cart-btn");
+
+let selectedItem = null;
 
 function openModal(item) {
   modal.classList.add("active");
@@ -376,10 +383,63 @@ function openModal(item) {
   modalTitle.textContent = item.name;
   modalDesc.textContent = item.desc;
   modalPrice.textContent = item.price;
+  selectedItem = item;
+  qtyInput.value = 1;
 
-  whatsappBtn.href =
-    `https://wa.me/441234567890?text=I want to order: ${item.name} (${item.price})`;
+  if (whatsappBtn) {
+    whatsappBtn.href =
+        `https://wa.me/441234567890?text=I want to order: ${item.name}`;
 }
+  }
+
+
+  
+
+function saveBasket() {
+    localStorage.setItem("basket", JSON.stringify(basket));
+}
+
+plusBtn.onclick = () => {
+
+    if(Number(qtyInput.value) < 50){
+
+        qtyInput.value++;
+
+    }
+
+};
+
+minusBtn.onclick = () => {
+
+    if(Number(qtyInput.value) > 1){
+
+        qtyInput.value--;
+
+    }
+
+};
+
+let basket = JSON.parse(localStorage.getItem("basket")) || [];
+updateCartUI();
+
+addCartBtn.onclick = () => {
+
+    basket.push({
+
+        ...selectedItem,
+
+        quantity: Number(qtyInput.value)
+
+    });
+    
+    saveBasket();
+    updateCartUI();
+
+    modal.classList.remove("active");
+
+    console.log(basket);
+
+};
 
 closeBtn.onclick = () => {
   modal.classList.remove("active");
@@ -389,4 +449,90 @@ window.onclick = (e) => {
   if (e.target === modal) {
     modal.classList.remove("active");
   }
+};
+
+
+function updateCartUI() {
+    const count = basket.reduce((sum, item) => sum + item.quantity, 0);
+    document.getElementById("cart-count").textContent = count;
+}
+
+updateCartUI();
+
+
+
+
+
+
+
+const cartIcon = document.getElementById("cart-icon");
+const cartDrawer = document.getElementById("cart-drawer");
+const cartOverlay = document.getElementById("cart-overlay");
+const cartClose = document.getElementById("cart-close");
+
+cartIcon.onclick = openCart;
+cartClose.onclick = closeCart;
+cartOverlay.onclick = closeCart;
+
+function openCart() {
+  cartDrawer.classList.add("active");
+  cartOverlay.classList.add("active");
+  renderCart();
+}
+
+function closeCart() {
+  cartDrawer.classList.remove("active");
+  cartOverlay.classList.remove("active");
+}
+
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+
+function renderCart() {
+
+  cartItems.innerHTML = "";
+
+  let total = 0;
+
+  basket.forEach((item, index) => {
+
+    const price = parseFloat(item.price.replace("£", ""));
+    total += price * item.quantity;
+
+    const div = document.createElement("div");
+    div.className = "cart-item";
+
+    div.innerHTML = `
+      <div>
+        <strong>${item.name}</strong><br>
+        £${price} × ${item.quantity}
+      </div>
+
+      <button onclick="removeItem(${index})">X</button>
+    `;
+
+    cartItems.appendChild(div);
+  });
+
+  cartTotal.textContent = total.toFixed(2);
+}
+
+function removeItem(index) {
+  basket.splice(index, 1);
+  saveBasket();
+  updateCartUI();
+  renderCart();
+}
+
+document.getElementById("checkout-btn").onclick = () => {
+
+  let message = "Hi, I want to order:%0A%0A";
+
+  basket.forEach(item => {
+    message += `${item.name} x${item.quantity} - ${item.price}%0A`;
+  });
+
+  const phone = "441234567890";
+
+  window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 };

@@ -35,9 +35,16 @@
     <li><a href="about.html">About Us</a></li>
   </ul>
 
-  <div class="menu-toggle" id="menu-toggle">☰</div>
+  
 
   <a href="#custom-contact-section" class="nav-btn">Order Now</a>
+
+  <div class="cart-button" id="cart-icon">
+  🛒
+  <span id="cart-count">0</span>
+</div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
 
 </nav>
 
@@ -390,8 +397,46 @@
     <p id="modal-desc"></p>
     <h3 id="modal-price"></h3>
 
-    <!-- <a id="whatsapp-btn" class="whatsapp-btn" target="_blank">Order on WhatsApp</a> -->
+<div class="quantity-selector">
+    <button id="minus-btn">−</button>
+
+    <input
+        type="number"
+        id="quantity"
+        value="1"
+        min="1"
+        max="50"
+    >
+
+    <button id="plus-btn">+</button>
+</div>
+
+<button id="add-cart-btn">
+    Add to Basket
+</button>
+</div>
+</div>
+
+
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<div class="cart-drawer" id="cart-drawer">
+
+  <div class="cart-header">
+    <h2>Your Basket</h2>
+    <span id="cart-close">×</span>
   </div>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <h3>Total: £<span id="cart-total">0.00</span></h3>
+
+    <button id="checkout-btn">
+      Checkout on WhatsApp
+    </button>
+  </div>
+
 </div>
 
 
